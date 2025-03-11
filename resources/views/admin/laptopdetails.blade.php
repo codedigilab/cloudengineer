@@ -3,21 +3,7 @@
 
 <head>
 
-        @include('admin/include.head')
-        <?php
-    $sheet_id = "1SyFDvVPJ6ieDCG4URkw6i4Horb_KbGCQmzAsc_VJsCY";
-    $api_key = "AIzaSyARbSMuMMY5GWue3dAarlWr8sfBX-dbTIg";
-    $range = "laptop";
-    $url = "https://sheets.googleapis.com/v4/spreadsheets/$sheet_id/values/$range?key=$api_key";
-    $response = file_get_contents($url);
-    $data = json_decode($response, true);
-    if (!isset($data['values'])) {
-        die("No data found.");
-    }
-    $headers = $data['values'][0]; // First row as headers
-    $rows = array_slice($data['values'], 1); // Remaining rows as data
-
-    ?>
+    @include('admin/include.head')
 
 </head>
 
@@ -30,7 +16,7 @@
 
         @include('admin/include.header')
         @include('admin/include.sidebar')
-      
+
         <!-- ============================================================== -->
         <!-- Start right Content here -->
         <!-- ============================================================== -->
@@ -62,12 +48,15 @@
                             <div class="card">
                                 <div class="card-body">
 
-                                    <h4 class="card-title text-end "><a class="btn btn-primary active" href="#">Add Laptop</a></h4>
-                                    
-                                    <table id="datatable-buttons" class="table table-bordered border-success table table-bordered dt-responsive nowrap w-100">
+                                    <h4 class="card-title text-end "><a class="btn btn-primary active"
+                                            href="#">Add Laptop</a></h4>
+
+                                    <table id="datatable-buttons"
+                                        class="table table-bordered border-success table table-bordered dt-responsive nowrap w-100">
                                         <thead>
-                                         
+
                                             <tr>
+                                                <th>No.</th>
                                                 <th>Laptop Type</th>
                                                 <th>Emp Code</th>
                                                 <th>Emp E-Mail Id</th>
@@ -79,20 +68,43 @@
                                                 <th>Adapter Brand</th>
                                                 <th>Product ID</th>
                                                 <th>Laptop Model</th>
+                                               
                                                 <th>Extra</th>
+                                                <th>Delete</th>
                                             </tr>
                                         </thead>
 
 
                                         <tbody>
-                                            <?php foreach ($rows as $row): ?>
-                                                
+                                            @foreach ($data as $key => $row)
                                                 <tr>
-                                                    <?php foreach ($row as $cell): ?>
-                                                        <td><?php echo htmlspecialchars($cell); ?></td>
-                                                    <?php endforeach; ?>
+                                                    <td><?php echo $key + 1; ?></td>
+                                                    <td>{{ $row[0] }}</td>
+                                                    <td>{{ $row[1] }}</td>
+                                                    <td>{{ $row[2] }}</td>
+                                                    <td>{{ $row[3] }}</td>
+                                                    <td>{{ $row[4] }}</td>
+                                                    <td>{{ $row[5] }}</td>
+                                                    <td>{{ $row[6] }}</td>
+                                                    <td>{{ $row[7] }}</td>
+                                                    <td>{{ $row[8] }}</td>
+                                                    <td>{{ $row[9] }}</td>
+                                                    <td>{{ $row[10] }}</td>
+                                                    <td>{{ $row[12] }}</td>
+                                                   
+                                                   
+                                                    <td>
+                                                        <a href="{{ route('laptopdetails.edit', $key + 1) }}"
+                                                            class="btn btn-warning">Edit</a>
+                                                    
+                                                        <a href="{{ route('laptopdetails.toggleStatus', $key + 1) }}"
+                                                            class="btn btn-info">
+                                                            {{ $row[12] == 'Enabled' ? 'Disable' : 'Enable' }}
+                                                        </a>
+                                                    </td>
+
                                                 </tr>
-                                            <?php endforeach; ?> 
+                                            @endforeach
                                         </tbody>
                                     </table>
                                 </div>
