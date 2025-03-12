@@ -68,7 +68,6 @@
                                                 <th>Adapter Brand</th>
                                                 <th>Product ID</th>
                                                 <th>Laptop Model</th>
-                                               
                                                 <th>Extra</th>
                                                 <th>Delete</th>
                                             </tr>
@@ -99,7 +98,7 @@
                                                     
                                                         <a href="{{ route('laptopdetails.toggleStatus', $key + 1) }}"
                                                             class="btn btn-info">
-                                                            {{ $row[12] == 'Enabled' ? 'Disable' : 'Enable' }}
+                                                            {{ $row[13] == 'Enabled' ? 'Disable' : 'Enable' }}
                                                         </a>
                                                     </td>
 

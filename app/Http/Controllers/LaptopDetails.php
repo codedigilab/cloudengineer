@@ -7,8 +7,8 @@ use Illuminate\Support\Facades\Http;
 
 class LaptopDetails extends Controller
 {
-    private $apiUrl = 'https://script.google.com/macros/s/AKfycby1o3KyWQeWTd06QIN6IM9uFuyGpkCEkvtDdeKsa2kxmPiwvxbe4zua3I3Ft90GDWBj/exec';
-
+    private $apiUrl = 'https://script.google.com/macros/s/AKfycbxXYCuThyTu5r7olblp7ViGeUOSzhaNt6ZeGTPwpo8vkcg_Ayz-wNV555Mfc3PvZ77r/exec';
+   
     public function index()
     {
         $response = Http::post($this->apiUrl, ['action' => 'read']);
@@ -20,9 +20,18 @@ class LaptopDetails extends Controller
     {
         Http::post($this->apiUrl, [
             'action' => 'create',
-            'name' => $request->name,
-            'email' => $request->email,
-            'phone' => $request->phone,
+            'laptoptype' => $request->laptoptype,
+            'empcode' => $request->empcode,
+            'empemailid' => $request->empemailid,
+            'contactnumber' => $request->contactnumber,
+            'employname' => $request->employname,
+            'designation' => $request->designation,
+            'deviceidname' => $request->deviceidname,
+            'adopterno' => $request->adopterno,
+            'adapterbrand' => $request->adapterbrand,
+            'productid' => $request->productid,
+            'laptopmodel' => $request->laptopmodel,
+            'extra' => $request->extra,   
         ]);
         return redirect()->back()->with('success', 'Record Added');
     }
@@ -33,7 +42,7 @@ class LaptopDetails extends Controller
         $data = json_decode($response->body(), true);
 
         if (!isset($data[$row - 1])) {
-            return redirect()->route('admin.editlaptopdetails')->with('error', 'Record not found.');
+            return redirect()->route('admin.laptopdetails')->with('error', 'Record not found.');
         }
 
         $record = $data[$row - 1]; // Get specific row
@@ -45,12 +54,21 @@ class LaptopDetails extends Controller
         Http::post($this->apiUrl, [
             'action' => 'update',
             'row' => $row,
-            'name' => $request->name,
-            'email' => $request->email,
-            'phone' => $request->phone,
+            'laptoptype' => $request->laptoptype,
+            'empcode' => $request->empcode,
+            'empemailid' => $request->empemailid,
+            'contactnumber' => $request->contactnumber,
+            'employname' => $request->employname,
+            'designation' => $request->designation,
+            'deviceidname' => $request->deviceidname,
+            'adopterno' => $request->adopterno,
+            'adapterbrand' => $request->adapterbrand,
+            'productid' => $request->productid,
+            'laptopmodel' => $request->laptopmodel,
+            'extra' => $request->extra,            
         ]);
 
-        return redirect()->route('admin.laptopdetails')->with('success', 'Record Updated');
+        return redirect()->route('laptopdetails.index')->with('success', 'Record Updated');
     }
 
     public function toggleStatus($row)

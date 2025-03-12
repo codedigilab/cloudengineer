@@ -4,6 +4,9 @@
 
 <head>
     @include('admin/include.head')
+<link href="{{ url('assets/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
+<link href="{{ url('assets/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body data-sidebar="dark">
@@ -51,26 +54,25 @@
                                     <h4 class="card-title mb-4">Basic Wizard</h4>
 
                                     <div id="basic-example">
-                                        <!-- Seller Details -->
-                                        <h3>Seller Details</h3>
+                                       
                                         <section>
-                                            <form method="POST" action="{{ route('laptopdetails.edit', $row) }}">
+                                            <form method="POST" action="{{ route('laptopdetails.update', $row) }}">
                                                @csrf
                                                 <div class="row">
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
-                                                            <label for="basicpill-firstname-input">First name</label>
+                                                            <label for="basicpill-firstname-input">Laptop Type</label>
                                                             <input type="text" class="form-control" value="{{ $record[0] }}"
-                                                                id="basicpill-firstname-input"
-                                                                placeholder="Enter Your First Name">
+                                                                name="laptoptype"
+                                                                placeholder="Laptop Type">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
-                                                            <label for="basicpill-lastname-input">Last name</label>
+                                                            <label for="basicpill-lastname-input">Emp Code</label>
                                                             <input type="text" class="form-control" value="{{ $record[1] }}"
-                                                                id="basicpill-lastname-input"
-                                                                placeholder="Enter Your Last Name">
+                                                                 name="empcode"
+                                                                placeholder="Emp Code">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -78,183 +80,99 @@
                                                 <div class="row">
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
-                                                            <label for="basicpill-phoneno-input">Phone</label>
-                                                            <input type="text" class="form-control"
-                                                                id="basicpill-phoneno-input"
-                                                                placeholder="Enter Your Phone No.">
+                                                            <label for="basicpill-phoneno-input">Emp Email Id</label>
+                                                            <input type="text" class="form-control" value="{{ $record[2] }}"
+                                                                 name="empemailid"
+                                                                placeholder="Emp Email Id">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
-                                                            <label for="basicpill-email-input">Email</label>
-                                                            <input type="email" class="form-control"
-                                                                id="basicpill-email-input"
-                                                                placeholder="Enter Your Email ID">
+                                                            <label for="basicpill-email-input">Contact Number</label>
+                                                            <input type="text" class="form-control" value="{{ $record[3] }}"
+                                                                name="contactnumber"
+                                                                placeholder="Contact Number">
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-lg-12">
+                                                    <div class="col-lg-6">
                                                         <div class="mb-3">
-                                                            <label for="basicpill-address-input">Address</label>
-                                                            <textarea id="basicpill-address-input" class="form-control" rows="2" placeholder="Enter Your Address"></textarea>
+                                                            <label for="basicpill-address-input">Employ Name</label>
+                                                             <input type="text" class="form-control" value="{{ $record[4] }}"
+                                                                 name="employname"
+                                                                placeholder="Employ Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="basicpill-address-input">Designation</label>
+                                                             <input type="text" class="form-control" value="{{ $record[5] }}"
+                                                                 name="designation"
+                                                                placeholder="Designation">
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="basicpill-address-input">Device ID Name</label>
+                                                             <input type="text" class="form-control" value="{{ $record[6] }}"
+                                                                 name="deviceidname"
+                                                                placeholder="Device ID Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="basicpill-address-input">Adopter No</label>
+                                                             <input type="text" class="form-control" value="{{ $record[7] }}"
+                                                                 name="adopterno"
+                                                                placeholder="Adopter No">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="basicpill-address-input">Adapter Brand</label>
+                                                             <input type="text" class="form-control" value="{{ $record[8] }}"
+                                                                 name="adapterbrand"
+                                                                placeholder="Adapter Brand">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="basicpill-address-input">Product ID</label>
+                                                             <input type="text" class="form-control" value="{{ $record[9] }}"
+                                                                 name="productid"
+                                                                placeholder="Product ID">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="basicpill-address-input">Laptop Model</label>
+                                                             <input type="text" class="form-control" value="{{ $record[10] }}"
+                                                                 name="laptopmodel"
+                                                                placeholder="Laptop Model">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="basicpill-address-input">Extra</label>
+                                                             <input type="text" class="form-control" value="{{ $record[12] }}"
+                                                                 name="extra"
+                                                                placeholder="Extra">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button type="submit" class="btn btn-success">Update</button>
                                             </form>
                                         </section>
 
-                                        <!-- Company Document -->
-                                        <h3>Company Document</h3>
-                                        <section>
-                                            <form>
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <div class="mb-3">
-                                                            <label for="basicpill-pancard-input">PAN Card</label>
-                                                            <input type="text" class="form-control"
-                                                                id="basicpill-pancard-input"
-                                                                placeholder="Enter Your PAN No.">
-                                                        </div>
-                                                    </div>
+                                       
 
-                                                    <div class="col-lg-6">
-                                                        <div class="mb-3">
-                                                            <label for="basicpill-vatno-input">VAT/TIN No.</label>
-                                                            <input type="text" class="form-control"
-                                                                id="basicpill-vatno-input"
-                                                                placeholder="Enter Your VAT/TIN No.">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <div class="mb-3">
-                                                            <label for="basicpill-cstno-input">CST No.</label>
-                                                            <input type="text" class="form-control"
-                                                                id="basicpill-cstno-input"
-                                                                placeholder="Enter Your CST No.">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-lg-6">
-                                                        <div class="mb-3">
-                                                            <label for="basicpill-servicetax-input">Service Tax
-                                                                No.</label>
-                                                            <input type="text" class="form-control"
-                                                                id="basicpill-servicetax-input"
-                                                                placeholder="Enter Your Service Tax No.">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <div class="mb-3">
-                                                            <label for="basicpill-companyuin-input">Company UIN</label>
-                                                            <input type="text" class="form-control"
-                                                                id="basicpill-companyuin-input"
-                                                                placeholder="Enter Your Company UIN">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-lg-6">
-                                                        <div class="mb-3">
-                                                            <label
-                                                                for="basicpill-declaration-input">Declaration</label>
-                                                            <input type="text" class="form-control"
-                                                                id="basicpill-Declaration-input"
-                                                                placeholder="Declaration Details">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </section>
-
-                                        <!-- Bank Details -->
-                                        <h3>Bank Details</h3>
-                                        <section>
-                                            <div>
-                                                <form>
-                                                    <div class="row">
-                                                        <div class="col-lg-6">
-                                                            <div class="mb-3">
-                                                                <label for="basicpill-namecard-input">Name on
-                                                                    Card</label>
-                                                                <input type="text" class="form-control"
-                                                                    id="basicpill-namecard-input"
-                                                                    placeholder="Enter Your Name on Card">
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-lg-6">
-                                                            <div class="mb-3">
-                                                                <label>Credit Card Type</label>
-                                                                <select class="form-select">
-                                                                    <option selected>Select Card Type</option>
-                                                                    <option value="AE">American Express</option>
-                                                                    <option value="VI">Visa</option>
-                                                                    <option value="MC">MasterCard</option>
-                                                                    <option value="DI">Discover</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-lg-6">
-                                                            <div class="mb-3">
-                                                                <label for="basicpill-cardno-input">Credit Card
-                                                                    Number</label>
-                                                                <input type="text" class="form-control"
-                                                                    id="basicpill-cardno-input"
-                                                                    placeholder="Credit Card Number">
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-lg-6">
-                                                            <div class="mb-3">
-                                                                <label for="basicpill-card-verification-input">Card
-                                                                    Verification Number</label>
-                                                                <input type="text" class="form-control"
-                                                                    id="basicpill-card-verification-input"
-                                                                    placeholder="Credit Verification Number">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-lg-6">
-                                                            <div class="mb-3">
-                                                                <label for="basicpill-expiration-input">Expiration
-                                                                    Date</label>
-                                                                <input type="text" class="form-control"
-                                                                    id="basicpill-expiration-input"
-                                                                    placeholder="Card Expiration Date">
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </section>
-
-                                        <!-- Confirm Details -->
-                                        <h3>Confirm Detail</h3>
-                                        <section>
-                                            <div class="row justify-content-center">
-                                                <div class="col-lg-6">
-                                                    <div class="text-center">
-                                                        <div class="mb-4">
-                                                            <i
-                                                                class="mdi mdi-check-circle-outline text-success display-4"></i>
-                                                        </div>
-                                                        <div>
-                                                            <h5>Confirm Detail</h5>
-                                                            <p class="text-muted">If several languages coalesce, the
-                                                                grammar of the resulting</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
                                     </div>
 
                                 </div>
