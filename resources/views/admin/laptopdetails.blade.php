@@ -77,6 +77,7 @@
                                         <tbody>
                                             @foreach ($data as $key => $row)
                                                 <tr>
+                                                    
                                                     <td><?php echo $key + 1; ?></td>
                                                     <td>{{ $row[0] }}</td>
                                                     <td>{{ $row[1] }}</td>
@@ -90,7 +91,7 @@
                                                     <td>{{ $row[9] }}</td>
                                                     <td>{{ $row[10] }}</td>
                                                     <td>{{ $row[11] }}</td>
-                                                   
+                                                 
                                                    
                                                     <td>
                                                         <a href="{{ route('laptopdetails.edit', $key + 1) }}"
