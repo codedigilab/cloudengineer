@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LaptopDetails;
+use App\Http\Controllers\WifiPassword;
 
 
 //AdminPanel
@@ -16,9 +17,15 @@ Route::get('/laptopdetails/toggle/{row}', [LaptopDetails::class, 'toggleStatus']
 Route::get('/addlaptopdetails', [LaptopDetails::class, 'storedata'])->name('storedata.index');
 
 
-
+//wifipassword
+Route::get('/wifipassword', [WifiPassword::class, 'index'])->name('wifipassword.index');
+Route::post('/wifipassword', [WifiPassword::class, 'store'])->name('wifipassword.store');
+Route::get('/wifipassword/edit/{row}', [WifiPassword::class, 'edit'])->name('wifipassword.edit');
+Route::post('/wifipassword/update/{row}', [WifiPassword::class, 'update'])->name('wifipassword.update');
+Route::get('/wifipassword/toggle/{row}', [WifiPassword::class, 'toggleStatus'])->name('wifipassword.toggleStatus');
+Route::get('/addwifipassword', [WifiPassword::class, 'storedata'])->name('storedata.index');
 
 //HomePage
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/admin', function () {
+    return view('admin.index');
 });

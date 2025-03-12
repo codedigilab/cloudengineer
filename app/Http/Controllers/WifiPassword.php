@@ -2,24 +2,25 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 
-class LaptopDetails extends Controller
+class WifiPassword extends Controller
 {
     private $apiUrl = 'https://script.google.com/macros/s/AKfycbzRRbJfYPi4xtzePdf2_7ssjI8GWUZDnmXRMjUbj_daCHhBKibsWSNCW4PcpdG_X07o/exec';
 
     public function index()
     {
-        $response = Http::post($this->apiUrl, ['action' => 'read']);
+        $response = Http::post($this->apiUrl, ['action' => 'read1']);
         $data = json_decode($response->body(), true);
-        return view('admin.laptopdetails', compact('data'));
+        return view('admin.wifipassword', compact('data'));
     }
     public function storedata()
     {
         $response = Http::post($this->apiUrl, ['action' => 'read']);
         $data = json_decode($response->body(), true);
-        return view('admin.addlaptopdetails', compact('data'));
+        return view('admin.addwifipassword', compact('data'));
     }
     public function store(Request $request)
     {
@@ -38,7 +39,7 @@ class LaptopDetails extends Controller
             'laptopmodel' => $request->laptopmodel,
             'extra' => $request->extra,   
         ]);
-        return redirect()->route('laptopdetails.index')->with('success', 'Record Added');
+        return redirect()->route('wifipassword.index')->with('success', 'Record Added');
     }
 
     public function edit($row)
@@ -47,11 +48,11 @@ class LaptopDetails extends Controller
         $data = json_decode($response->body(), true);
 
         if (!isset($data[$row - 1])) {
-            return redirect()->route('admin.laptopdetails')->with('error', 'Record not found.');
+            return redirect()->route('admin.wifipassword')->with('error', 'Record not found.');
         }
 
         $record = $data[$row - 1]; // Get specific row
-        return view('admin.editlaptopdetails', compact('record', 'row'));
+        return view('admin.editwifipassword', compact('record', 'row'));
     }
 
     public function update(Request $request, $row)
@@ -73,7 +74,7 @@ class LaptopDetails extends Controller
             'extra' => $request->extra,            
         ]);
 
-        return redirect()->route('laptopdetails.index')->with('success', 'Record Updated');
+        return redirect()->route('wifipassword.index')->with('success', 'Record Updated');
     }
 
     public function toggleStatus($row)
@@ -82,6 +83,6 @@ class LaptopDetails extends Controller
             'action' => 'toggle_status',
             'row' => $row,
         ]);
-        return redirect()->route('laptopdetails.index')->with('success', 'Status Updated');
+        return redirect()->route('wifipassword.index')->with('success', 'Status Updated');
     }
 }
