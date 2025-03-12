@@ -21,7 +21,7 @@
                   <li class="menu-title" key="t-apps">Company Samosa Party</li>
 
                   <li>
-                      <a href="laptop" class="waves-effect">
+                      <a href="laptopdetails" class="waves-effect">
 
                           <i class="bx bx-layout"></i>
                           <span key="t-layouts">All Laptop</span>

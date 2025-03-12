@@ -49,7 +49,7 @@
                                 <div class="card-body">
 
                                     <h4 class="card-title text-end "><a class="btn btn-primary active"
-                                            href="#">Add Laptop</a></h4>
+                                            href="addlaptopdetails">Add Laptop</a></h4>
 
                                     <table id="datatable-buttons"
                                         class="table table-bordered border-success table table-bordered dt-responsive nowrap w-100">
@@ -89,7 +89,7 @@
                                                     <td>{{ $row[8] }}</td>
                                                     <td>{{ $row[9] }}</td>
                                                     <td>{{ $row[10] }}</td>
-                                                    <td>{{ $row[12] }}</td>
+                                                    <td>{{ $row[11] }}</td>
                                                    
                                                    
                                                     <td>

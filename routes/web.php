@@ -13,6 +13,9 @@ Route::post('/laptopdetails', [LaptopDetails::class, 'store'])->name('laptopdeta
 Route::get('/laptopdetails/edit/{row}', [LaptopDetails::class, 'edit'])->name('laptopdetails.edit');
 Route::post('/laptopdetails/update/{row}', [LaptopDetails::class, 'update'])->name('laptopdetails.update');
 Route::get('/laptopdetails/toggle/{row}', [LaptopDetails::class, 'toggleStatus'])->name('laptopdetails.toggleStatus');
+Route::get('/addlaptopdetails', [LaptopDetails::class, 'storedata'])->name('storedata.index');
+
+
 
 
 //HomePage

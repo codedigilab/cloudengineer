@@ -15,7 +15,12 @@ class LaptopDetails extends Controller
         $data = json_decode($response->body(), true);
         return view('admin.laptopdetails', compact('data'));
     }
-
+    public function storedata()
+    {
+        $response = Http::post($this->apiUrl, ['action' => 'read']);
+        $data = json_decode($response->body(), true);
+        return view('admin.addlaptopdetails', compact('data'));
+    }
     public function store(Request $request)
     {
         Http::post($this->apiUrl, [
@@ -33,7 +38,7 @@ class LaptopDetails extends Controller
             'laptopmodel' => $request->laptopmodel,
             'extra' => $request->extra,   
         ]);
-        return redirect()->back()->with('success', 'Record Added');
+        return redirect()->route('laptopdetails.index')->with('success', 'Record Added');
     }
 
     public function edit($row)
