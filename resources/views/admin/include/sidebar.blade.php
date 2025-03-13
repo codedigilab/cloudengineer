@@ -81,6 +81,12 @@
                           <span key="t-tasks">POS Version</span>
                       </a>
                   </li>
+                  <li>
+                      <a href="storeproblem" class="waves-effect">
+                          <i class="bx bx-task"></i>
+                          <span key="t-tasks">Store Problem</span>
+                      </a>
+                  </li>
 
               </ul>
           </div>

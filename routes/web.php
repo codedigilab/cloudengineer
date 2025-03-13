@@ -9,7 +9,7 @@ use App\Http\Controllers\Camera;
 use App\Http\Controllers\Internet;
 use App\Http\Controllers\Solution;
 use App\Http\Controllers\Pos;
-
+use App\Http\Controllers\StoreProblem;
 
 
 //AdminPanel
@@ -81,6 +81,13 @@ Route::post('/pos/update/{row}', [Pos::class, 'update'])->name('pos.update');
 Route::get('/pos/toggle/{row}', [Pos::class, 'toggleStatus'])->name('pos.toggleStatus');
 Route::get('/addpos', [Pos::class, 'storedata'])->name('storedata.index');
 
+//StoreProblem
+Route::get('/storeproblem', [StoreProblem::class, 'index'])->name('storeproblem.index');
+Route::post('/storeproblem', [StoreProblem::class, 'store'])->name('storeproblem.store');
+Route::get('/storeproblem/edit/{row}', [StoreProblem::class, 'edit'])->name('storeproblem.edit');
+Route::post('/storeproblem/update/{row}', [StoreProblem::class, 'update'])->name('storeproblem.update');
+Route::get('/storeproblem/toggle/{row}', [StoreProblem::class, 'toggleStatus'])->name('storeproblem.toggleStatus');
+Route::get('/addstoreproblem', [StoreProblem::class, 'storedata'])->name('storedata.index');
 
 //HomePage
 Route::get('/admin', function () {
