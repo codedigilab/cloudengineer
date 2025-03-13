@@ -100,3 +100,20 @@ Route::get('/admin', function () {
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/project', function () {
+    return view('project');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+Route::get('/offering', function () {
+    return view('offering');
+});
