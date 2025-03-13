@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LaptopDetails;
 use App\Http\Controllers\WifiPassword;
-
+use App\Http\Controllers\Stock;
 
 //AdminPanel
 
@@ -24,6 +24,14 @@ Route::get('/wifipassword/edit/{row}', [WifiPassword::class, 'edit'])->name('wif
 Route::post('/wifipassword/update/{row}', [WifiPassword::class, 'update'])->name('wifipassword.update');
 Route::get('/wifipassword/toggle/{row}', [WifiPassword::class, 'toggleStatus'])->name('wifipassword.toggleStatus');
 Route::get('/addwifipassword', [WifiPassword::class, 'storedata'])->name('storedata.index');
+
+//Stock
+Route::get('/stock', [Stock::class, 'index'])->name('stock.index');
+Route::post('/stock', [Stock::class, 'store'])->name('stock.store');
+Route::get('/stock/edit/{row}', [Stock::class, 'edit'])->name('stock.edit');
+Route::post('/stock/update/{row}', [Stock::class, 'update'])->name('stock.update');
+Route::get('/stock/toggle/{row}', [Stock::class, 'toggleStatus'])->name('stock.toggleStatus');
+Route::get('/addstock', [Stock::class, 'storedata'])->name('storedata.index');
 
 //HomePage
 Route::get('/admin', function () {

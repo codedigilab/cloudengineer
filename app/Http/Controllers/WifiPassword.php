@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Http;
 
 class WifiPassword extends Controller
 {
-    private $apiUrl = 'https://script.google.com/macros/s/AKfycbzRRbJfYPi4xtzePdf2_7ssjI8GWUZDnmXRMjUbj_daCHhBKibsWSNCW4PcpdG_X07o/exec';
+    private $apiUrl = 'https://script.google.com/macros/s/AKfycbxpPVV3DilOJTbvO8Y74pukeNo7eBhhfu36DKmfYBEL4x72TQ9XZEB7XPNZgHXaLkE-/exec';
 
     public function index()
     {
