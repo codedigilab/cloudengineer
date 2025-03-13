@@ -76,7 +76,7 @@
                   </li>
 
                   <li>
-                      <a href="posupdate" class="waves-effect">
+                      <a href="pos" class="waves-effect">
                           <i class="bx bx-task"></i>
                           <span key="t-tasks">POS Version</span>
                       </a>

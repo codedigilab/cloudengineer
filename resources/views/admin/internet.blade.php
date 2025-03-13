@@ -4,20 +4,7 @@
 <head>
 
     @include('admin/include.head')
-    <?php
-    $sheet_id = "1SyFDvVPJ6ieDCG4URkw6i4Horb_KbGCQmzAsc_VJsCY";
-    $api_key = "AIzaSyARbSMuMMY5GWue3dAarlWr8sfBX-dbTIg";
-    $range = "internet";
-    $url = "https://sheets.googleapis.com/v4/spreadsheets/$sheet_id/values/$range?key=$api_key";
-    $response = file_get_contents($url);
-    $data = json_decode($response, true);
-    if (!isset($data['values'])) {
-        die("No data found.");
-    }
-    $headers = $data['values'][0]; // First row as headers
-    $rows = array_slice($data['values'], 1); // Remaining rows as data
 
-    ?>
 
 </head>
 
@@ -62,7 +49,8 @@
                             <div class="card">
                                 <div class="card-body">
 
-                                    <h4 class="card-title text-end "><a class="btn btn-primary active" href="#">Add
+                                    <h4 class="card-title text-end "><a class="btn btn-primary active"
+                                            href="#">Add
                                             Laptop</a></h4>
 
                                     <table id="datatable-buttons"
@@ -70,6 +58,7 @@
                                         <thead>
 
                                             <tr>
+                                                <th>No</th>
                                                 <th>Store Name</th>
                                                 <th>Number</th>
                                                 <th>Account No</th>
@@ -83,19 +72,42 @@
                                                 <th>State</th>
                                                 <th>Type of the Premise</th>
                                                 <th>OLD NO</th>
+                                                <th>Action</th>
                                             </tr>
                                         </thead>
 
 
                                         <tbody>
-                                            <?php foreach ($rows as $row): ?>
+                                            @foreach ($data as $key => $row)
+                                                <tr>
 
-                                            <tr>
-                                                <?php foreach ($row as $cell): ?>
-                                                <td><?php echo htmlspecialchars($cell); ?></td>
-                                                <?php endforeach; ?>
-                                            </tr>
-                                            <?php endforeach; ?>
+                                                    <td><?php echo $key + 1; ?></td>
+                                                    <td>{{ $row[0] }}</td>
+                                                    <td>{{ $row[1] }}</td>
+                                                    <td>{{ $row[2] }}</td>
+                                                    <td>{{ $row[3] }}</td>
+                                                    <td>{{ $row[4] }}</td>
+                                                    <td>{{ $row[5] }}</td>
+                                                    <td>{{ $row[6] }}</td>
+                                                    <td>{{ $row[7] }}</td>
+                                                    <td>{{ $row[8] }}</td>
+                                                    <td>{{ $row[9] }}</td>
+                                                    <td>{{ $row[10] }}</td>
+                                                    <td>{{ $row[11] }}</td>
+                                                    <td>{{ $row[12] }}</td>
+
+                                                    <td>
+                                                        <a href="{{ route('internet.edit', $key + 1) }}"
+                                                            class="btn btn-warning">Edit</a>
+
+                                                        <a href="{{ route('internet.toggleStatus', $key + 1) }}"
+                                                            class="btn btn-info">
+                                                            {{ $row[13] == 'Enabled' ? 'Disable' : 'Enable' }}
+                                                        </a>
+                                                    </td>
+
+                                                </tr>
+                                            @endforeach
                                         </tbody>
                                     </table>
                                 </div>
@@ -113,7 +125,7 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <script>
-                            document.write(new Date().getFullYear())
+                                document.write(new Date().getFullYear())
                             </script> © KHALID.
                         </div>
                         <div class="col-sm-6">

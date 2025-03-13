@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Http;
 
 class Stock extends Controller
 {
-    private $apiUrl = 'https://script.google.com/macros/s/AKfycbz1-OKGpRybWF38Y6oFLyPojKgwinQxHbu5_n_0fu8qNemz5g8T0lV3r8oDWCblGQxr/exec';
+    private $apiUrl = 'https://script.google.com/macros/s/AKfycbwA9a2WY0v2D0K77N8nCVQXAevMQKKnZee6q7UDs8ggwDfaaMCP4JDc6QqXI3fOEvc/exec';
 
     public function index()
     {

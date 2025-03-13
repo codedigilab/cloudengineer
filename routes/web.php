@@ -5,6 +5,13 @@ use App\Http\Controllers\LaptopDetails;
 use App\Http\Controllers\WifiPassword;
 use App\Http\Controllers\Stock;
 use App\Http\Controllers\StoreNumber;
+use App\Http\Controllers\Camera;
+use App\Http\Controllers\Internet;
+use App\Http\Controllers\Solution;
+use App\Http\Controllers\Pos;
+
+
+
 //AdminPanel
 
 
@@ -40,6 +47,39 @@ Route::get('/storenumber/edit/{row}', [StoreNumber::class, 'edit'])->name('store
 Route::post('/storenumber/update/{row}', [StoreNumber::class, 'update'])->name('storenumber.update');
 Route::get('/storenumber/toggle/{row}', [StoreNumber::class, 'toggleStatus'])->name('storenumber.toggleStatus');
 Route::get('/addstorenumber', [StoreNumber::class, 'storedata'])->name('storedata.index');
+
+//Camera
+Route::get('/camera', [Camera::class, 'index'])->name('camera.index');
+Route::post('/camera', [Camera::class, 'store'])->name('camera.store');
+Route::get('/camera/edit/{row}', [Camera::class, 'edit'])->name('camera.edit');
+Route::post('/camera/update/{row}', [Camera::class, 'update'])->name('camera.update');
+Route::get('/camera/toggle/{row}', [Camera::class, 'toggleStatus'])->name('camera.toggleStatus');
+Route::get('/addcamera', [Camera::class, 'storedata'])->name('storedata.index');
+
+//Internet
+Route::get('/internet', [Internet::class, 'index'])->name('internet.index');
+Route::post('/internet', [Internet::class, 'store'])->name('internet.store');
+Route::get('/internet/edit/{row}', [Internet::class, 'edit'])->name('internet.edit');
+Route::post('/internet/update/{row}', [Internet::class, 'update'])->name('internet.update');
+Route::get('/internet/toggle/{row}', [Internet::class, 'toggleStatus'])->name('internet.toggleStatus');
+Route::get('/addinternet', [Internet::class, 'storedata'])->name('storedata.index');
+
+//Solution
+Route::get('/solution', [Solution::class, 'index'])->name('solution.index');
+Route::post('/solution', [Solution::class, 'store'])->name('solution.store');
+Route::get('/solution/edit/{row}', [Solution::class, 'edit'])->name('solution.edit');
+Route::post('/solution/update/{row}', [Solution::class, 'update'])->name('solution.update');
+Route::get('/solution/toggle/{row}', [Solution::class, 'toggleStatus'])->name('solution.toggleStatus');
+Route::get('/addsolution', [Solution::class, 'storedata'])->name('storedata.index');
+
+
+//POS
+Route::get('/pos', [Pos::class, 'index'])->name('pos.index');
+Route::post('/pos', [Pos::class, 'store'])->name('pos.store');
+Route::get('/pos/edit/{row}', [Pos::class, 'edit'])->name('pos.edit');
+Route::post('/pos/update/{row}', [Pos::class, 'update'])->name('pos.update');
+Route::get('/pos/toggle/{row}', [Pos::class, 'toggleStatus'])->name('pos.toggleStatus');
+Route::get('/addpos', [Pos::class, 'storedata'])->name('storedata.index');
 
 
 //HomePage

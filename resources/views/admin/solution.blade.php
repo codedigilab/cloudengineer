@@ -49,30 +49,37 @@
                             <div class="card">
                                 <div class="card-body">
 
-                                    <h4 class="card-title text-end "><a class="btn btn-primary active" href="#">Add Laptop</a></h4>
+                                    <h4 class="card-title text-end "><a class="btn btn-primary active" href="addsolution">Add Problem</a></h4>
                                     
                                     <table id="datatable-buttons" class="table table-bordered border-success table table-bordered dt-responsive nowrap w-100">
                                         <thead>
                                          
                                             <tr>
+                                                <th>No.</th>
                                                 <th>Name</th>
                                                 <th>Remark</th>
                                                 <th>URL</th>
                                                 <th>Problem</th>
+                                                <th>Action</th>
                                                 
                                             </tr>
                                         </thead>
 
 
                                         <tbody>
-                                            <?php foreach ($rows as $row): ?>
-                                                
+                                            @foreach ($data as $key => $row)
                                                 <tr>
-                                                    <?php foreach ($row as $cell): ?>
-                                                        <td><?php echo htmlspecialchars($cell); ?></td>
-                                                    <?php endforeach; ?>
+                                                    <td><?php echo $key + 1; ?></td>
+                                                    <td>{{ $row[0] }}</td>
+                                                    <td>{{ $row[1] }}</td>
+                                                    <td>{{ $row[2] }}</td>
+                                                    <td>{{ $row[3] }}</td>
+                                                    <td>
+                                                        <a href="{{ route('solution.edit', $key + 1) }}"
+                                                            class="btn btn-warning">Edit</a>
+                                                    </td>
                                                 </tr>
-                                            <?php endforeach; ?> 
+                                            @endforeach
                                         </tbody>
                                     </table>
                                 </div>
