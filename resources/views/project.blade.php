@@ -34,7 +34,7 @@
         <div
             class="container position-relative cus-z1 d-flex justify-content-center justify-content-lg-start mb-xxl-15 mb-xl-8 mb-7">
             <div class="backmenu-head">
-                <a href="index.html" class="fw_400 fs-seven n0-color text-uppercase golelayla-logo">
+                <a href="/" class="fw_400 fs-seven n0-color text-uppercase golelayla-logo">
                     <svg width="20" height="18" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.57 5.92969L3.5 11.9997L9.57 18.0697" stroke="white" stroke-width="1.5"
@@ -58,7 +58,7 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="row g-xxl-6 g-4">
                                 <div class="col-lg-12" data-aos="zoom-in-up" data-aos-duration="1000">
-                                    <a href="project-details.html" class="all-proitem">
+                                    <a href="project" class="all-proitem">
                                         <img src="asset/images/gallery/gs1.png" alt="img" class="widing">
                                         <span class="aroha-boxwrap d-flex align-items-center justify-content-between">
                                             <span class="aroha-box">
@@ -76,7 +76,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-12" data-aos="zoom-in-down" data-aos-duration="1000">
-                                    <a href="project-details.html" class="all-proitem">
+                                    <a href="project" class="all-proitem">
                                         <img src="asset/images/gallery/gs3.png" alt="img" class="widing">
                                         <span class="aroha-boxwrap d-flex align-items-center justify-content-between">
                                             <span class="aroha-box">
@@ -96,7 +96,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
-                            <a href="project-details.html" class="all-proitem" data-aos="zoom-in-left"
+                            <a href="project" class="all-proitem" data-aos="zoom-in-left"
                                 data-aos-duration="1400">
                                 <img src="asset/images/gallery/gs2.png" alt="img" class="widing">
                                 <span class="aroha-boxwrap d-flex align-items-center justify-content-between">
@@ -115,7 +115,7 @@
                             </a>
                         </div>
                         <div class="col-lg-12" data-aos="zoom-in-down" data-aos-duration="1200">
-                            <a href="project-details.html" class="all-proitem">
+                            <a href="project" class="all-proitem">
                                 <img src="asset/images/gallery/gs4.png" alt="img" class="heighting widing">
                                 <span class="aroha-boxwrap w-100 d-flex align-items-center justify-content-between">
                                     <span class="aroha-box">
@@ -133,7 +133,7 @@
                             </a>
                         </div>
                         <div class="col-lg-6 col-md-6" data-aos="fade-down" data-aos-duration="1000">
-                            <a href="project-details.html" class="all-proitem">
+                            <a href="project" class="all-proitem">
                                 <img src="asset/images/gallery/gs5.png" alt="img" class="heighting widing">
                                 <span class="aroha-boxwrap d-flex align-items-center justify-content-between">
                                     <span class="aroha-box">
@@ -152,7 +152,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6 position-relative cus-z1" data-aos="fade-up"
                             data-aos-duration="1200">
-                            <a href="project-details.html" class="all-proitem">
+                            <a href="project" class="all-proitem">
                                 <img src="asset/images/gallery/gs6.png" alt="img" class="heighting widing">
                                 <span class="aroha-boxwrap d-flex align-items-center justify-content-between">
                                     <span class="aroha-box">

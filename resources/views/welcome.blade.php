@@ -55,10 +55,10 @@
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-center">
-                                        <a href="about.html"
+                                        <a href="about"
                                             class="cmn-btn text-center justify-content-center gap-2 d-inline-flex align-items-center py-3 px-6 px-5">
                                             <span class="n0-color">
-                                                I’m Gole Layla
+                                                I’m MD KHALID
                                             </span>
                                             <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -70,7 +70,7 @@
                                             </svg>
                                         </a>
                                     </div>
-                                    <a href="about.html"
+                                    <a href="about"
                                         class="d-flex mt-8 cmn-footarrow align-items-center justify-content-between">
                                         <span class="fw_500 fs-seven n0-color">
                                             Biography
@@ -88,7 +88,7 @@
                                         </span>
                                     </a>
                                 </div>
-                                <a href="article.html"
+                                <a href="article"
                                     class="common-serbox d-block cmn-box py-xxl-6 py-xl-6 py-lg-4 py-4 px-xxl-6 px-xxl-6 px-lg-4 px-4"
                                     data-aos="fade-up" data-aos-duration="1000">
                                     <span class="d-block mb-xxl-19 mb-14 fw_500 fs-five n0-color">
@@ -123,7 +123,7 @@
                                             </h5>
                                             <h3 class="titles-designer pb-xxl-7 pb-5" data-aos="fade-down"
                                                 data-aos-duration="1500">
-                                                <a href="about.html" class="fw_600">
+                                                <a href="about" class="fw_600">
                                                     Product
                                                     <span class="d-block title-extraclr ms-8">Designer</span>
                                                 </a>
@@ -182,7 +182,7 @@
                                                     </a>
                                                 </li>
                                             </ul>
-                                            <a href="about.html"
+                                            <a href="about"
                                                 class="d-flex mt-7 cmn-footarrow align-items-center justify-content-between">
                                                 <span class="fw_500 fs-seven n0-color">
                                                     Profiles
@@ -210,7 +210,7 @@
                                         </span>
                                         <ul class="ordering-brand d-flex justify-content-between gap-3 mb-11">
                                             <li>
-                                                <a href="offering.html" class="text-center">
+                                                <a href="offering" class="text-center">
                                                     <span class="text-center d-block">
                                                         <img src="asset/images/global/ui.png" alt="ui-img">
                                                     </span>
@@ -220,7 +220,7 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="offering.html" class="text-center">
+                                                <a href="offering" class="text-center">
                                                     <span class="text-center d-block">
                                                         <img src="asset/images/global/digital.png" alt="ui-img">
                                                     </span>
@@ -230,7 +230,7 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="offering.html" class="text-center">
+                                                <a href="offering" class="text-center">
                                                     <span class="text-center d-block">
                                                         <img src="asset/images/global/brand.png" alt="ui-img">
                                                     </span>
@@ -240,7 +240,7 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="offering.html" class="text-center">
+                                                <a href="offering" class="text-center">
                                                     <span class="text-center d-block">
                                                         <img src="asset/images/global/web.png" alt="ui-img">
                                                     </span>
@@ -250,14 +250,14 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                        <a href="offering.html" class="d-flex align-items-center gap-xxl-3 gap-1">
+                                        <a href="offering" class="d-flex align-items-center gap-xxl-3 gap-1">
                                             <span class="goodthingking">
                                                 Things I’m good at
                                             </span>
                                             <img src="asset/images/global/goods.png" alt="img"
                                                 class="goodthingking-img">
                                         </a>
-                                        <a href="offering.html"
+                                        <a href="offering"
                                             class="d-flex mt-10 cmn-footarrow align-items-center justify-content-between">
                                             <span class="fw_500 fs-seven n0-color">
                                                 All Services
@@ -1142,11 +1142,11 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-left" data-aos-duration="1200">
-                                <a href="contact.html"
+                                <a href="contact"
                                     class="common-serbox d-block cmn-box py-xl-8 py-4 px-xxl-6 px-xxl-6 px-lg-4 px-4">
                                     <span class="d-block mb-xxl-15 mb-18 fw_500 fs-five n0-color work-respon">
                                         Work with
-                                        <span class="d-block fw_500 fs-five n0-color ms-8"> Gole Layla...!</span>
+                                        <span class="d-block fw_500 fs-five n0-color ms-8"> MD KHALID...!</span>
                                     </span>
                                     <span
                                         class="d-flex cmn-footarrow get-respons-1199 align-items-center justify-content-between">
@@ -1311,7 +1311,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-6 col-sm-6">
-                                <a href="project.html"
+                                <a href="project"
                                     class="cmn-box position-relative d-block pb-xxl-8 pb-xl-6 pb-lg-5 pb-5 pt-xxl-8 pt-xl-6 pt-lg-5 pt-5 px-xxl-8 px-xl-6 px-lg-4 px-4">
                                     <span class="d-block mb-xxl-5 mb-4 fw_500 fs-five n0-color">
                                         See My

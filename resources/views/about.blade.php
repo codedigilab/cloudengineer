@@ -34,7 +34,7 @@
         <div
             class="container position-relative cus-z1 d-flex justify-content-center justify-content-lg-start mb-xxl-15 mb-xl-8 mb-7">
             <div class="backmenu-head">
-                <a href="index.html" class="fw_400 fs-seven n0-color text-uppercase golelayla-logo">
+                <a href="/" class="fw_400 fs-seven n0-color text-uppercase golelayla-logo">
                     <svg width="20" height="18" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.57 5.92969L3.5 11.9997L9.57 18.0697" stroke="white" stroke-width="1.5"
@@ -325,10 +325,10 @@
                                 </li>
                             </ul>
                             <div class="stay mt-xxl-5 mt-xl-5 mt-lg-10 mt-12">
-                                <a href="about.html" class="d-flex stay-with justify-content-start n06">
+                                <a href="about" class="d-flex stay-with justify-content-start n06">
                                     Stay With Me
                                 </a>
-                                <a href="about.html"
+                                <a href="about"
                                     class="d-flex mt-2 cmn-footarrow align-items-center justify-content-between">
                                     <span class="fw_500 fs-seven n0-color fs-seven fw_300">
                                         Profiles
@@ -383,7 +383,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6 position-relative cus-z1" data-aos="zoom-in-down"
                         data-aos-duration="1400">
-                        <a href="contact.html"
+                        <a href="contact"
                             class="common-serbox position-relative cus-z1 d-flex align-items-center justify-content-center h-100 d-block cmn-box py-xl-8 py-4 px-xxl-6 px-xxl-6 px-lg-4 px-4">
                             <span>
                                 <span class="d-block mb-109 fw_500 fs-five n0-color work-respon">

@@ -5,7 +5,7 @@
                  <div class="main-navbar" data-aos="fade-up" data-aos-duration="1000">
                      <nav class="navbar-custom">
                          <div class="d-flex align-items-center justify-content-between">
-                             <a href="index.html" class="nav-brand d-block d-lg-none">
+                             <a href="/" class="nav-brand d-block d-lg-none">
                                  <h4 class="fw_500 n0-color golelayla-logo">
                                      MD <span class="s1-color"> KHALID</span>
                                  </h4>
@@ -24,7 +24,7 @@
                              <div
                                  class="d-flex gap-5 flex-column flex-lg-row text-lg-start text-center align-items-start align-items-lg-center justify-content-center justify-content-between mt-5 mt-lg-0">
                                  <div class="navbar-brand logo d-none d-lg-flex">
-                                     <a href="index.html">
+                                     <a href="/">
                                          <h4 class="fw_600 n0-color">
                                              MD <span class="s1-color"> KHALID</span>
                                          </h4>
@@ -61,7 +61,7 @@
                                     
                                  </ul>
                                  <div class="d-flex justify-content-center  m-auto m-lg-0 justify-content-lg-end">
-                                     <a href="contact.html" class="kewta-btn d-flex align-items-center">
+                                     <a href="contact" class="kewta-btn d-flex align-items-center">
                                          <span class="kew-text">
                                              Let’s Talk
                                          </span>

@@ -1,9 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-
-<!-- Mirrored from softivuspro.com/bentox/bontox/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Mar 2025 17:55:45 GMT -->
-
 <head>
 
     @include('include.head')
@@ -36,7 +33,7 @@
         <div
             class="container position-relative cus-z1 d-flex justify-content-center justify-content-lg-start mb-xxl-15 mb-xl-8 mb-7">
             <div class="backmenu-head">
-                <a href="index.html" class="fw_400 fs-seven n0-color text-uppercase golelayla-logo">
+                <a href="/" class="fw_400 fs-seven n0-color text-uppercase golelayla-logo">
                     <svg width="20" height="18" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.57 5.92969L3.5 11.9997L9.57 18.0697" stroke="white" stroke-width="1.5"
