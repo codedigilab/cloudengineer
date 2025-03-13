@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Http;
 
 class LaptopDetails extends Controller
 {
-    private $apiUrl = 'https://script.google.com/macros/s/AKfycbxpPVV3DilOJTbvO8Y74pukeNo7eBhhfu36DKmfYBEL4x72TQ9XZEB7XPNZgHXaLkE-/exec';
+    private $apiUrl = 'https://script.google.com/macros/s/AKfycbz1-OKGpRybWF38Y6oFLyPojKgwinQxHbu5_n_0fu8qNemz5g8T0lV3r8oDWCblGQxr/exec';
 
     public function index()
     {

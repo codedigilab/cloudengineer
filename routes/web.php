@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LaptopDetails;
 use App\Http\Controllers\WifiPassword;
 use App\Http\Controllers\Stock;
-
+use App\Http\Controllers\StoreNumber;
 //AdminPanel
 
 
@@ -32,6 +32,15 @@ Route::get('/stock/edit/{row}', [Stock::class, 'edit'])->name('stock.edit');
 Route::post('/stock/update/{row}', [Stock::class, 'update'])->name('stock.update');
 Route::get('/stock/toggle/{row}', [Stock::class, 'toggleStatus'])->name('stock.toggleStatus');
 Route::get('/addstock', [Stock::class, 'storedata'])->name('storedata.index');
+
+//StoreNumber
+Route::get('/storenumber', [StoreNumber::class, 'index'])->name('storenumber.index');
+Route::post('/storenumber', [StoreNumber::class, 'store'])->name('storenumber.store');
+Route::get('/storenumber/edit/{row}', [StoreNumber::class, 'edit'])->name('storenumber.edit');
+Route::post('/storenumber/update/{row}', [StoreNumber::class, 'update'])->name('storenumber.update');
+Route::get('/storenumber/toggle/{row}', [StoreNumber::class, 'toggleStatus'])->name('storenumber.toggleStatus');
+Route::get('/addstorenumber', [StoreNumber::class, 'storedata'])->name('storedata.index');
+
 
 //HomePage
 Route::get('/admin', function () {
