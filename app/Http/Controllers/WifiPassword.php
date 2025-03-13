@@ -18,33 +18,28 @@ class WifiPassword extends Controller
     }
     public function storedata()
     {
-        $response = Http::post($this->apiUrl, ['action' => 'read']);
+        $response = Http::post($this->apiUrl, ['action' => 'read1']);
         $data = json_decode($response->body(), true);
         return view('admin.addwifipassword', compact('data'));
     }
     public function store(Request $request)
     {
         Http::post($this->apiUrl, [
-            'action' => 'create',
+            'action' => 'create1',
             'laptoptype' => $request->laptoptype,
             'empcode' => $request->empcode,
             'empemailid' => $request->empemailid,
             'contactnumber' => $request->contactnumber,
             'employname' => $request->employname,
             'designation' => $request->designation,
-            'deviceidname' => $request->deviceidname,
-            'adopterno' => $request->adopterno,
-            'adapterbrand' => $request->adapterbrand,
-            'productid' => $request->productid,
-            'laptopmodel' => $request->laptopmodel,
-            'extra' => $request->extra,   
+              
         ]);
         return redirect()->route('wifipassword.index')->with('success', 'Record Added');
     }
 
     public function edit($row)
     {
-        $response = Http::post($this->apiUrl, ['action' => 'read']);
+        $response = Http::post($this->apiUrl, ['action' => 'read1']);
         $data = json_decode($response->body(), true);
 
         if (!isset($data[$row - 1])) {
@@ -58,7 +53,7 @@ class WifiPassword extends Controller
     public function update(Request $request, $row)
     {
         Http::post($this->apiUrl, [
-            'action' => 'update',
+            'action' => 'update1',
             'row' => $row,
             'laptoptype' => $request->laptoptype,
             'empcode' => $request->empcode,
@@ -66,12 +61,7 @@ class WifiPassword extends Controller
             'contactnumber' => $request->contactnumber,
             'employname' => $request->employname,
             'designation' => $request->designation,
-            'deviceidname' => $request->deviceidname,
-            'adopterno' => $request->adopterno,
-            'adapterbrand' => $request->adapterbrand,
-            'productid' => $request->productid,
-            'laptopmodel' => $request->laptopmodel,
-            'extra' => $request->extra,            
+                    
         ]);
 
         return redirect()->route('wifipassword.index')->with('success', 'Record Updated');
@@ -80,7 +70,7 @@ class WifiPassword extends Controller
     public function toggleStatus($row)
     {
         $response = Http::post($this->apiUrl, [
-            'action' => 'toggle_status',
+            'action' => 'toggle_status1',
             'row' => $row,
         ]);
         return redirect()->route('wifipassword.index')->with('success', 'Status Updated');

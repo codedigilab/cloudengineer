@@ -48,7 +48,7 @@
                             <div class="card">
                                 <div class="card-body">
 
-                                    <h4 class="card-title text-end "><a class="btn btn-primary active" href="#">Add Laptop</a></h4>
+                                    <h4 class="card-title text-end "><a class="btn btn-primary active" href="addwifipassword">Add WIFI Password</a></h4>
                                     
                                     <table id="datatable-buttons" class="table table-bordered border-success table table-bordered dt-responsive nowrap w-100">
                                         <thead>
@@ -78,7 +78,7 @@
                                                     <td>{{ $row[4] }}</td>
                                                     <td>{{ $row[5] }}</td>
                                                     <td>
-                                                        <a href="{{ route('laptopdetails.edit', $key + 1) }}"
+                                                        <a href="{{ route('wifipassword.edit', $key + 1) }}"
                                                             class="btn btn-warning">Edit</a>
                                                     
                                                        
