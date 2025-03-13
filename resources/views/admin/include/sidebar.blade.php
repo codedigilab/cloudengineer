@@ -19,7 +19,24 @@
 
 
                   <li class="menu-title" key="t-apps">Company Samosa Party</li>
-
+                  <li>
+                      <a href="storeproblem" class="waves-effect">
+                          <i class="bx bx-task"></i>
+                          <span key="t-tasks">Store Problem</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="stock" class=" waves-effect">
+                          <i class="bx bx-briefcase-alt-2"></i>
+                          <span key="t-projects">All Stock</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="transfer" class=" waves-effect">
+                          <i class="bx bx-briefcase-alt-2"></i>
+                          <span key="t-projects">Transfer Stock</span>
+                      </a>
+                  </li>
                   <li>
                       <a href="laptopdetails" class="waves-effect">
 
@@ -56,7 +73,7 @@
                           <i class="bx bx-envelope"></i>
                           <span key="t-email">Internet Data</span>
                       </a>
-                  
+
                   </li>
 
                   <li>
@@ -64,16 +81,10 @@
                           <i class="bx bx-receipt"></i>
                           <span key="t-invoices">Solution</span>
                       </a>
-                  
+
                   </li>
 
-                  <li>
-                      <a href="stock" class=" waves-effect">
-                          <i class="bx bx-briefcase-alt-2"></i>
-                          <span key="t-projects">All Stock</span>
-                      </a>
-                   
-                  </li>
+                  
 
                   <li>
                       <a href="pos" class="waves-effect">
@@ -81,12 +92,7 @@
                           <span key="t-tasks">POS Version</span>
                       </a>
                   </li>
-                  <li>
-                      <a href="storeproblem" class="waves-effect">
-                          <i class="bx bx-task"></i>
-                          <span key="t-tasks">Store Problem</span>
-                      </a>
-                  </li>
+                 
 
               </ul>
           </div>

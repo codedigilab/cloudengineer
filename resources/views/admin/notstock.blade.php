@@ -74,7 +74,7 @@
 
                                         <tbody>
                                              @foreach ($data as $key => $row)
-                                               @if($row[5] == null)
+                                               @if(empty($row[5]) == null)
                                                 <tr>
                                                     <td><?php echo $key + 1; ?></td>
                                                     <td>{{ $row[0] }}</td>

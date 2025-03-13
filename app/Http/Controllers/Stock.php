@@ -15,6 +15,12 @@ class Stock extends Controller
         $data = json_decode($response->body(), true);
         return view('admin.stock', compact('data'));
     }
+    public function transfer()
+    {
+        $response = Http::post($this->apiUrl, ['action' => 'read2']);
+        $data = json_decode($response->body(), true);
+        return view('admin.notstock', compact('data'));
+    }
     public function storedata()
     {
         $response = Http::post($this->apiUrl, ['action' => 'read2']);

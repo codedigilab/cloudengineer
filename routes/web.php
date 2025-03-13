@@ -34,6 +34,7 @@ Route::get('/addwifipassword', [WifiPassword::class, 'storedata'])->name('stored
 
 //Stock
 Route::get('/stock', [Stock::class, 'index'])->name('stock.index');
+Route::get('/transfer', [Stock::class, 'transfer'])->name('stock.transfer');
 Route::post('/stock', [Stock::class, 'store'])->name('stock.store');
 Route::get('/stock/edit/{row}', [Stock::class, 'edit'])->name('stock.edit');
 Route::post('/stock/update/{row}', [Stock::class, 'update'])->name('stock.update');
