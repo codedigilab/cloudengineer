@@ -72,13 +72,13 @@
                             <div class="layla-infoabout text-center">
                                 <h4 class="text-white mb-md-6 mb-4 fw_500">
                                     <span class="d-block">Hello,</span>
-                                    I’m Gole Layla, an Award-Winning
+                                    I’m MD KHALID, an Award-Winning
                                     <span class="d-block">
-                                        Product Designer.
+                                        Cloud Computing.
                                     </span>
                                 </h4>
                                 <p>
-                                    As a skilled Product designer, illustrator, and visual development expert, my
+                                    As a skilled Cloud Computing, illustrator, and visual development expert, my
                                     diverse background has allowed me to apply my talents across different fields and
                                     industries, demonstrating adaptability and versatility.
                                 </p>
@@ -158,7 +158,7 @@
                                         2010 // 2015
                                     </span>
                                     <span class="n07 nameta">
-                                        UI/UX Designer
+                                        AWS Cloud
                                     </span>
                                     <span class="n07 nameta">
                                         Intel
@@ -184,7 +184,7 @@
                                         </svg>
                                     </span>
                                     <span class="n07 fs-six fw_300">
-                                        Branding
+                                        AWS Cloud
                                     </span>
                                 </li>
                                 <li>
@@ -198,7 +198,7 @@
                                         </svg>
                                     </span>
                                     <span class="n07 fs-six fw_300">
-                                        Illustration
+                                        Google Cloud
                                     </span>
                                 </li>
                                 <li>
@@ -212,7 +212,7 @@
                                         </svg>
                                     </span>
                                     <span class="n07 fs-six fw_300">
-                                        Logo Design
+                                        Web Development
                                     </span>
                                 </li>
                                 <li>
@@ -226,7 +226,7 @@
                                         </svg>
                                     </span>
                                     <span class="n07 fs-six fw_300">
-                                        Typography
+                                        Azure Cloud
                                     </span>
                                 </li>
                             </ul>

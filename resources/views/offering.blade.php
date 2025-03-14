@@ -56,16 +56,16 @@
                     <div class="col-lg-6 col-md-6" data-aos="zoom-in-down" data-aos-duration="1000">
                         <div class="orffering-serbox cmn-box py-xxl-15 py-lg-8 py-7 px-xxl-15 px-lg-8 px-lg-7 px-5">
                             <h4 class="n0-color mb-xxl-10 mb-7">
-                                UI/UX
+                                AWS
                                 <span class="ms-10 d-block">
-                                    Design
+                                    Cloud
                                 </span>
                             </h4>
                             <div class="band-icon band-border1 mb-xxl-10 mb-7">
                                 <img src="asset/images/global/ui.png" alt="img">
                             </div>
                             <p>
-                                Welcome to our UI/UX Design Showcase, where creativity meets functionality. Dive world
+                                Welcome to our AWS Cloud Showcase, where creativity meets functionality. Dive world
                                 where user experience is paramount, and portfolio and witness the art of user-centric
                                 design that elevates digital experiences to new heights.
                             </p>
@@ -75,9 +75,9 @@
                     <div class="col-lg-6 col-md-6" data-aos="zoom-in-up" data-aos-duration="1200">
                         <div class="orffering-serbox cmn-box py-xxl-15 py-lg-8 py-7 px-xxl-15 px-lg-8 px-lg-7 px-5">
                             <h4 class="n0-color mb-xxl-10 mb-7">
-                                Digital
+                                Google
                                 <span class="ms-10 d-block">
-                                    Marketing
+                                    Cloud
                                 </span>
                             </h4>
                             <div class="band-icon band-border2 mb-xxl-10 mb-7">
@@ -94,9 +94,9 @@
                     <div class="col-lg-6 col-md-6" data-aos="zoom-in-down" data-aos-duration="1300">
                         <div class="orffering-serbox cmn-box py-xxl-15 py-lg-8 py-7 px-xxl-15 px-lg-8 px-lg-7 px-5">
                             <h4 class="n0-color mb-xxl-10 mb-7">
-                                Brand
+                                Azure
                                 <span class="ms-10 d-block">
-                                    Identity
+                                    Cloud
                                 </span>
                             </h4>
                             <div class="band-icon band-border3 mb-xxl-10 mb-7">

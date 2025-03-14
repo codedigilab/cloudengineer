@@ -235,7 +235,7 @@
                                                         <img src="asset/images/global/brand.png" alt="ui-img">
                                                     </span>
                                                     <span class="mt-5 ser-offeringopa d-block">
-                                                        Brand Identity
+                                                        Cloud Computing
                                                     </span>
                                                 </a>
                                             </li>
@@ -1279,7 +1279,7 @@
                                         data-aos="fade-up" data-aos-duration="1000">
                                         <div>
                                             <h2 class="fw_600 n0-color mb-2">
-                                                06
+                                                03
                                             </h2>
                                             <span class="expri-clr text-uppercase n00-color fw_300 fs-six">
                                                 YEARS EXPERIENCE
@@ -1290,7 +1290,7 @@
                                         data-aos="zoom-in-down" data-aos-duration="1200">
                                         <div>
                                             <h2 class="fw_600 n0-color mb-2">
-                                                +145
+                                                +108
                                             </h2>
                                             <span class="expri-clr text-uppercase n00-color fw_300 fs-six">
                                                 TOTAL PROJECTS
