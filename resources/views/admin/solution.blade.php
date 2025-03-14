@@ -58,8 +58,9 @@
                                                 <th>No.</th>
                                                 <th>Name</th>
                                                 <th>Remark</th>
-                                                <th>URL</th>
                                                 <th>Problem</th>
+                                                <th>URL</th>
+                                                
                                                 <th>Action</th>
                                                 
                                             </tr>
@@ -72,8 +73,9 @@
                                                     <td><?php echo $key + 1; ?></td>
                                                     <td>{{ $row[0] }}</td>
                                                     <td>{{ $row[1] }}</td>
-                                                    <td>{{ $row[2] }}</td>
                                                     <td>{{ $row[3] }}</td>
+                                                    <td><a href="{{ $row[2] }}">{{ $row[2] }}</a></td>
+                                                    
                                                     <td>
                                                         <a href="{{ route('solution.edit', $key + 1) }}"
                                                             class="btn btn-warning">Edit</a>
