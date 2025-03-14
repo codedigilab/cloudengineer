@@ -3,11 +3,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- ==== #Keywords ==== -->
-    <meta name="keywords" content="boot, Bootstrap, BentoX - Protfolio HTML Template">
+    <meta name="keywords" content="khalid,md khalid, mdkhalid, khalidcloudengineer,khalidengineer">
     <!-- ==== #Description ==== -->
-    <meta name="description" content="BentoX - Protfolio HTML Template">
+    <meta name="description" content="khalid,md khalid, mdkhalid, khalidcloudengineer,khalidengineer">
     <!-- ==== #Title ==== -->
-    <title>BentoX - Grid System Unique Protfolio HTML Template</title>
+    <title>MD KHALID</title>
     <!-- ==== #Favicon ==== -->
     <link rel="shortcut icon" href="asset/images/fav.png" type="image/x-icon">
 
