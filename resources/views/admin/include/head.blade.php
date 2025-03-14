@@ -1,8 +1,8 @@
 <meta charset="utf-8" />
-<title>IT SUPPORT KHALID</title>
+<title>MD KHALID</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta content="IT SUPPORT KHALID" name="description" />
-<meta content="Themesbrand" name="author" />
+<meta content="MD KHALID" name="khalid,md khalid, mdkhalid, khalidcloudengineer,khalidengineer" />
+<meta content="Themesbrand" name="khalid,md khalid, mdkhalid, khalidcloudengineer,khalidengineer" />
 <!-- App favicon -->
 <link rel="shortcut icon" href="{{ url('assets/images/favicon.ico') }}">
 <!-- DataTables -->
