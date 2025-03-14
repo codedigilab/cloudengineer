@@ -74,7 +74,7 @@
                                                     <td>{{ $row[0] }}</td>
                                                     <td>{{ $row[1] }}</td>
                                                     <td>{{ $row[3] }}</td>
-                                                    <td><a href="{{ $row[2] }}">{{ $row[2] }}</a></td>
+                                                    <td><a href="{{ $row[2] }}" target="_blank">{{ $row[2] }}</a></td>
                                                     
                                                     <td>
                                                         <a href="{{ route('solution.edit', $key + 1) }}"
