@@ -31,12 +31,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Crypto</h4>
+                                <h4 class="mb-sm-0 font-size-18">KHALID</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboards</a></li>
-                                        <li class="breadcrumb-item active">Crypto</li>
+                                        <li class="breadcrumb-item active">KHALID</li>
                                     </ol>
                                 </div>
 
@@ -135,7 +135,7 @@
                                         <div class="col-lg-9 col-sm-8">
                                             <div class="p-4">
                                                 <h5 class="text-primary">Welcome Back !</h5>
-                                                <p>Skote Crypto Dashboard</p>
+                                                <p>KHALID Cloud Engineer Dashboard</p>
 
                                                 <div class="text-muted">
                                                     <p class="mb-1"><i
