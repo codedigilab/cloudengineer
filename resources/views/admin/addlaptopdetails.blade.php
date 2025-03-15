@@ -62,6 +62,7 @@
                                                         <div class="mb-3">
                                                             <label for="basicpill-firstname-input">Laptop Type</label>
                                                             <select class="form-select" name="laptoptype">
+                                                                <option>Chose</option>
                                                                 <option value="Company Laptop">Company Laptop</option>
                                                                 <option value="Own Laptop">Own Laptop</option>
                                                                 <option value="Store Laptop">Store Laptop</option>

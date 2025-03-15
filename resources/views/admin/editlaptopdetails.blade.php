@@ -4,8 +4,8 @@
 
 <head>
     @include('admin/include.head')
-<link href="{{ url('assets/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
-<link href="{{ url('assets/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <link href="{{ url('assets/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
+    <link href="{{ url('assets/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -54,24 +54,28 @@
                                     <h4 class="card-title mb-4">Basic Wizard</h4>
 
                                     <div id="basic-example">
-                                       
+
                                         <section>
                                             <form method="POST" action="{{ route('laptopdetails.update', $row) }}">
-                                               @csrf
+                                                @csrf
                                                 <div class="row">
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
                                                             <label for="basicpill-firstname-input">Laptop Type</label>
-                                                            <input type="text" class="form-control" value="{{ $record[0] }}"
-                                                                name="laptoptype"
-                                                                placeholder="Laptop Type">
+
+                                                            <select class="form-select" name="laptoptype">
+                                                                <option>{{ $record[0] }}</option>
+                                                                <option value="Company Laptop">Company Laptop</option>
+                                                                <option value="Own Laptop">Own Laptop</option>
+                                                                <option value="Store Laptop">Store Laptop</option>
+                                                            </select>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
                                                             <label for="basicpill-lastname-input">Emp Code</label>
-                                                            <input type="text" class="form-control" value="{{ $record[1] }}"
-                                                                 name="empcode"
+                                                            <input type="text" class="form-control"
+                                                                value="{{ $record[1] }}" name="empcode"
                                                                 placeholder="Emp Code">
                                                         </div>
                                                     </div>
@@ -81,16 +85,16 @@
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
                                                             <label for="basicpill-phoneno-input">Emp Email Id</label>
-                                                            <input type="text" class="form-control" value="{{ $record[2] }}"
-                                                                 name="empemailid"
+                                                            <input type="text" class="form-control"
+                                                                value="{{ $record[2] }}" name="empemailid"
                                                                 placeholder="Emp Email Id">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
                                                             <label for="basicpill-email-input">Contact Number</label>
-                                                            <input type="text" class="form-control" value="{{ $record[3] }}"
-                                                                name="contactnumber"
+                                                            <input type="text" class="form-control"
+                                                                value="{{ $record[3] }}" name="contactnumber"
                                                                 placeholder="Contact Number">
                                                         </div>
                                                     </div>
@@ -99,16 +103,16 @@
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
                                                             <label for="basicpill-address-input">Employ Name</label>
-                                                             <input type="text" class="form-control" value="{{ $record[4] }}"
-                                                                 name="employname"
+                                                            <input type="text" class="form-control"
+                                                                value="{{ $record[4] }}" name="employname"
                                                                 placeholder="Employ Name">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
                                                             <label for="basicpill-address-input">Designation</label>
-                                                             <input type="text" class="form-control" value="{{ $record[5] }}"
-                                                                 name="designation"
+                                                            <input type="text" class="form-control"
+                                                                value="{{ $record[5] }}" name="designation"
                                                                 placeholder="Designation">
                                                         </div>
                                                     </div>
@@ -117,16 +121,16 @@
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
                                                             <label for="basicpill-address-input">Device ID Name</label>
-                                                             <input type="text" class="form-control" value="{{ $record[6] }}"
-                                                                 name="deviceidname"
+                                                            <input type="text" class="form-control"
+                                                                value="{{ $record[6] }}" name="deviceidname"
                                                                 placeholder="Device ID Name">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
                                                             <label for="basicpill-address-input">Adopter No</label>
-                                                             <input type="text" class="form-control" value="{{ $record[7] }}"
-                                                                 name="adopterno"
+                                                            <input type="text" class="form-control"
+                                                                value="{{ $record[7] }}" name="adopterno"
                                                                 placeholder="Adopter No">
                                                         </div>
                                                     </div>
@@ -135,16 +139,16 @@
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
                                                             <label for="basicpill-address-input">Adapter Brand</label>
-                                                             <input type="text" class="form-control" value="{{ $record[8] }}"
-                                                                 name="adapterbrand"
+                                                            <input type="text" class="form-control"
+                                                                value="{{ $record[8] }}" name="adapterbrand"
                                                                 placeholder="Adapter Brand">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
                                                             <label for="basicpill-address-input">Product ID</label>
-                                                             <input type="text" class="form-control" value="{{ $record[9] }}"
-                                                                 name="productid"
+                                                            <input type="text" class="form-control"
+                                                                value="{{ $record[9] }}" name="productid"
                                                                 placeholder="Product ID">
                                                         </div>
                                                     </div>
@@ -153,16 +157,16 @@
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
                                                             <label for="basicpill-address-input">Laptop Model</label>
-                                                             <input type="text" class="form-control" value="{{ $record[10] }}"
-                                                                 name="laptopmodel"
+                                                            <input type="text" class="form-control"
+                                                                value="{{ $record[10] }}" name="laptopmodel"
                                                                 placeholder="Laptop Model">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
                                                             <label for="basicpill-address-input">Extra</label>
-                                                             <input type="text" class="form-control" value="{{ $record[11] }}"
-                                                                 name="extra"
+                                                            <input type="text" class="form-control"
+                                                                value="{{ $record[11] }}" name="extra"
                                                                 placeholder="Extra">
                                                         </div>
                                                     </div>
@@ -171,7 +175,7 @@
                                             </form>
                                         </section>
 
-                                       
+
 
                                     </div>
 
@@ -189,7 +193,7 @@
             <!-- End Page-content -->
 
 
-           <footer class="footer">
+            <footer class="footer">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6">
@@ -212,7 +216,7 @@
     <!-- END layout-wrapper -->
 
 
-   @include('admin/include.script')
+    @include('admin/include.script')
 
 
 </body>
