@@ -86,7 +86,7 @@
             </div>
 
             <div class="dropdown d-inline-block">
-                <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
+                <button type="button" class="btn header-item noti-icon waves-effect">
                     <i class="bx bx-cog bx-spin"></i>
                 </button>
             </div>
