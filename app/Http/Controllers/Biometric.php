@@ -5,26 +5,26 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 
-class Camera extends Controller
+class Biometric extends Controller
 {
     private $apiUrl = 'https://script.google.com/macros/s/AKfycbwuHrCyKTGDRfRtJztyeFLYIfK5OO7YdXa14psV3u8WONWkwpRM2xA4ZstqLNMR6RZF/exec';
 
     public function index()
     {
-        $response = Http::post($this->apiUrl, ['action' => 'read4']);
+        $response = Http::post($this->apiUrl, ['action' => 'read10']);
         $data = json_decode($response->body(), true);
-        return view('admin.camera', compact('data'));
+        return view('admin.biometric', compact('data'));
     }
     public function storedata()
     {
-        $response = Http::post($this->apiUrl, ['action' => 'read4']);
+        $response = Http::post($this->apiUrl, ['action' => 'read10']);
         $data = json_decode($response->body(), true);
-        return view('admin.addcamera', compact('data'));
+        return view('admin.addbiometric', compact('data'));
     }
     public function store(Request $request)
     {
         Http::post($this->apiUrl, [
-            'action' => 'create4',
+            'action' => 'create10',
             'laptoptype' => $request->laptoptype,
             'empcode' => $request->empcode,
             'empemailid' => $request->empemailid,
@@ -38,26 +38,26 @@ class Camera extends Controller
             'laptopmodel' => $request->laptopmodel,
             'extra' => $request->extra,   
         ]);
-        return redirect()->route('camera.index')->with('success', 'Record Added');
+        return redirect()->route('biometric.index')->with('success', 'Record Added');
     }
 
     public function edit($row)
     {
-        $response = Http::post($this->apiUrl, ['action' => 'read4']);
+        $response = Http::post($this->apiUrl, ['action' => 'read10']);
         $data = json_decode($response->body(), true);
 
         if (!isset($data[$row - 1])) {
-            return redirect()->route('admin.camera')->with('error', 'Record not found.');
+            return redirect()->route('admin.biometric')->with('error', 'Record not found.');
         }
 
         $record = $data[$row - 1]; // Get specific row
-        return view('admin.editcamera', compact('record', 'row'));
+        return view('admin.editbiometric', compact('record', 'row'));
     }
 
     public function update(Request $request, $row)
     {
         Http::post($this->apiUrl, [
-            'action' => 'update4',
+            'action' => 'update10',
             'row' => $row,
             'laptoptype' => $request->laptoptype,
             'empcode' => $request->empcode,
@@ -73,15 +73,15 @@ class Camera extends Controller
             'extra' => $request->extra,            
         ]);
 
-        return redirect()->route('camera.index')->with('success', 'Record Updated');
+        return redirect()->route('biometric.index')->with('success', 'Record Updated');
     }
 
     public function toggleStatus($row)
     {
         $response = Http::post($this->apiUrl, [
-            'action' => 'toggle_status4',
+            'action' => 'toggle_status10',
             'row' => $row,
         ]);
-        return redirect()->route('camera.index')->with('success', 'Status Updated');
+        return redirect()->route('biometric.index')->with('success', 'Status Updated');
     }
 }

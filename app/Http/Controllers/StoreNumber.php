@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Http;
 
 class StoreNumber extends Controller
 {
-    private $apiUrl = 'https://script.google.com/macros/s/AKfycbwA9a2WY0v2D0K77N8nCVQXAevMQKKnZee6q7UDs8ggwDfaaMCP4JDc6QqXI3fOEvc/exec';
+    private $apiUrl = 'https://script.google.com/macros/s/AKfycbwuHrCyKTGDRfRtJztyeFLYIfK5OO7YdXa14psV3u8WONWkwpRM2xA4ZstqLNMR6RZF/exec';
 
     public function index()
     {

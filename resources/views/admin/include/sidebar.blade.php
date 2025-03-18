@@ -45,6 +45,22 @@
                       </a>
 
                   </li>
+                  <li>
+                      <a href="{{ route('prime.index') }}" class="waves-effect">
+
+                          <i class="bx bx-layout"></i>
+                          <span key="t-layouts">Prime Details</span>
+                      </a>
+                  </li>
+
+                  <li>
+                      <a href="{{ route('biometric.index') }}" class="waves-effect">
+
+                          <i class="bx bx-layout"></i>
+                          <span key="t-layouts">NCR Biometric Details</span>
+                      </a>
+
+                  </li>
 
                   <li>
                       <a href="{{ route('wifipassword.index') }}" class="waves-effect">

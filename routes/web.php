@@ -10,9 +10,9 @@ use App\Http\Controllers\Internet;
 use App\Http\Controllers\Solution;
 use App\Http\Controllers\Pos;
 use App\Http\Controllers\StoreProblem;
-
-
-//AdminPanel
+use App\Http\Controllers\Prime;
+use App\Http\Controllers\Biometric;
+//AdminPanel 
 
 
 //laptop
@@ -89,6 +89,22 @@ Route::get('/storeproblem/edit/{row}', [StoreProblem::class, 'edit'])->name('sto
 Route::post('/storeproblem/update/{row}', [StoreProblem::class, 'update'])->name('storeproblem.update');
 Route::get('/storeproblem/toggle/{row}', [StoreProblem::class, 'toggleStatus'])->name('storeproblem.toggleStatus');
 Route::get('/addstoreproblem', [StoreProblem::class, 'storedata'])->name('storedata.index');
+
+//Prime
+Route::get('/prime', [Prime::class, 'index'])->name('prime.index');
+Route::post('/prime', [Prime::class, 'store'])->name('prime.store');
+Route::get('/prime/edit/{row}', [Prime::class, 'edit'])->name('prime.edit');
+Route::post('/prime/update/{row}', [Prime::class, 'update'])->name('prime.update');
+Route::get('/prime/toggle/{row}', [Prime::class, 'toggleStatus'])->name('prime.toggleStatus');
+Route::get('/addprime', [Prime::class, 'storedata'])->name('storedata.index');
+
+//Biometric
+Route::get('/biometric', [Biometric::class, 'index'])->name('biometric.index');
+Route::post('/biometric', [Biometric::class, 'store'])->name('biometric.store');
+Route::get('/biometric/edit/{row}', [Biometric::class, 'edit'])->name('biometric.edit');
+Route::post('/biometric/update/{row}', [Biometric::class, 'update'])->name('biometric.update');
+Route::get('/biometric/toggle/{row}', [Biometric::class, 'toggleStatus'])->name('biometric.toggleStatus');
+Route::get('/addbiometric', [Biometric::class, 'storedata'])->name('storedata.index');
 
 //HomePage
 Route::get('/admin', function () {
