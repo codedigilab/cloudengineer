@@ -10,7 +10,7 @@
                   <li class="menu-title" key="t-menu">Menu</li>
 
                   <li>
-                      <a href="{{ route('admin.index') }}" class="waves-effect">
+                      <a href="admin" class="waves-effect">
                           <i class="bx bx-home-circle"></i>
                           <span key="t-dashboards">Dashboards</span>
                       </a>
@@ -32,7 +32,7 @@
                       </a>
                   </li>
                   <li>
-                      <a href="{{ route('transfer.index') }}" class=" waves-effect">
+                      <a href="{{ route('stock.transfer') }}" class=" waves-effect">
                           <i class="bx bx-briefcase-alt-2"></i>
                           <span key="t-projects">Transfer Stock</span>
                       </a>

@@ -92,7 +92,7 @@ Route::get('/addstoreproblem', [StoreProblem::class, 'storedata'])->name('stored
 
 //HomePage
 Route::get('/admin', function () {
-    return view('admin.index')->name('admin.index');;
+    return view('admin.index');
 });
 
 //HomePage
