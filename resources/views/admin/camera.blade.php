@@ -48,7 +48,7 @@
                             <div class="card">
                                 <div class="card-body">
 
-                                    <h4 class="card-title text-end "><a class="btn btn-primary active" href="addstock">Add Stock</a></h4>
+                                    <h4 class="card-title text-end "><a class="btn btn-primary active" href="addcamera">Add Camera</a></h4>
                                     
                                     <table id="datatable-buttons" class="table table-bordered border-success table table-bordered dt-responsive nowrap w-100">
                                         <thead>

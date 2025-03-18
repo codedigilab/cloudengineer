@@ -72,15 +72,14 @@
                             <div class="layla-infoabout text-center">
                                 <h4 class="text-white mb-md-6 mb-4 fw_500">
                                     <span class="d-block">Hello,</span>
-                                    I’m MD KHALID, an Award-Winning
-                                    <span class="d-block">
-                                        Cloud Computing.
+                                    I’m MD KHALID
+                                    <span class="d-block h4">
+                                        DevOps | SRE | Cloud Engineer
                                     </span>
                                 </h4>
                                 <p>
-                                    As a skilled Cloud Computing, illustrator, and visual development expert, my
-                                    diverse background has allowed me to apply my talents across different fields and
-                                    industries, demonstrating adaptability and versatility.
+                                    A passionate and skilled Cloud Engineer with a strong background in infrastructure provisioning, automation, and monitoring. I have complete Knowledge of Google Cloud for Associate Cloud Engineer and AWS for AWS Certified Cloud Practitioner.
+
                                 </p>
                             </div>
                         </div>
@@ -119,13 +118,13 @@
                                         </svg>
                                     </span>
                                     <span class="n07">
-                                        2021 // Now
+                                        2014 // 2016
                                     </span>
                                     <span class="n07 nameta">
-                                        UI Designer
+                                        HELP DESK TECHNICIAN
                                     </span>
                                     <span class="n07 nameta">
-                                        Apple
+                                        HEALTH CARE CENTRE – DARBHANGA BIHAR, IN
                                     </span>
                                 </li>
                                 <li>

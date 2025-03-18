@@ -10,7 +10,7 @@
                   <li class="menu-title" key="t-menu">Menu</li>
 
                   <li>
-                      <a href="admin" class="waves-effect">
+                      <a href="{{ route('admin.index') }}" class="waves-effect">
                           <i class="bx bx-home-circle"></i>
                           <span key="t-dashboards">Dashboards</span>
                       </a>
@@ -20,25 +20,25 @@
 
                   <li class="menu-title" key="t-apps">Company Samosa Party</li>
                   <li>
-                      <a href="storeproblem" class="waves-effect">
+                      <a href="{{ route('storeproblem.index') }}" class="waves-effect">
                           <i class="bx bx-task"></i>
                           <span key="t-tasks">Store Problem</span>
                       </a>
                   </li>
                   <li>
-                      <a href="stock" class=" waves-effect">
+                      <a href="{{ route('stock.index') }}" class=" waves-effect">
                           <i class="bx bx-briefcase-alt-2"></i>
                           <span key="t-projects">All Stock</span>
                       </a>
                   </li>
                   <li>
-                      <a href="transfer" class=" waves-effect">
+                      <a href="{{ route('transfer.index') }}" class=" waves-effect">
                           <i class="bx bx-briefcase-alt-2"></i>
                           <span key="t-projects">Transfer Stock</span>
                       </a>
                   </li>
                   <li>
-                      <a href="laptopdetails" class="waves-effect">
+                      <a href="{{ route('laptopdetails.index') }}" class="waves-effect">
 
                           <i class="bx bx-layout"></i>
                           <span key="t-layouts">All Laptop</span>
@@ -47,21 +47,21 @@
                   </li>
 
                   <li>
-                      <a href="wifipassword" class="waves-effect">
+                      <a href="{{ route('wifipassword.index') }}" class="waves-effect">
                           <i class="bx bx-calendar"></i>
                           <span key="t-dashboards">Wifi Password</span>
                       </a>
                   </li>
 
                   <li>
-                      <a href="storenumber" class="waves-effect">
+                      <a href="{{ route('storenumber.index') }}" class="waves-effect">
                           <i class="bx bx-chat"></i>
                           <span key="t-chat">Store Number</span>
                       </a>
                   </li>
 
                   <li>
-                      <a href="camera" class="waves-effect">
+                      <a href="{{ route('camera.index') }}" class="waves-effect">
                           <i class="bx bx-file"></i>
                           <span key="t-file-manager">NCR Camera</span>
                       </a>
@@ -69,7 +69,7 @@
 
 
                   <li>
-                      <a href="internet" class=" waves-effect">
+                      <a href="{{ route('internet.index') }}" class=" waves-effect">
                           <i class="bx bx-envelope"></i>
                           <span key="t-email">Internet Data</span>
                       </a>
@@ -77,7 +77,7 @@
                   </li>
 
                   <li>
-                      <a href="solution" class=" waves-effect">
+                      <a href="{{ route('solution.index') }}" class=" waves-effect">
                           <i class="bx bx-receipt"></i>
                           <span key="t-invoices">Solution</span>
                       </a>
@@ -87,7 +87,7 @@
                   
 
                   <li>
-                      <a href="pos" class="waves-effect">
+                      <a href="{{ route('pos.index') }}" class="waves-effect">
                           <i class="bx bx-task"></i>
                           <span key="t-tasks">POS Version</span>
                       </a>
