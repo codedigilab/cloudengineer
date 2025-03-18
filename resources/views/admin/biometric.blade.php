@@ -48,7 +48,7 @@
                             <div class="card">
                                 <div class="card-body">
 
-                                    <h4 class="card-title text-end "><a class="btn btn-primary active" href="addbiometric">Add WIFI Password</a></h4>
+                                    <h4 class="card-title text-end "><a class="btn btn-primary active" href="addbiometric">Add Biometric</a></h4>
                                     
                                     <table id="datatable-buttons" class="table table-bordered border-success table table-bordered dt-responsive nowrap w-100">
                                         <thead>

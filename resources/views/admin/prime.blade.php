@@ -83,13 +83,8 @@
                                                     <td>{{ $row[7] }}</td>
                                                    
                                                     <td>
-                                                        <a href="{{ route('storenumber.edit', $key + 1) }}"
+                                                        <a href="{{ route('prime.edit', $key + 1) }}"
                                                             class="btn btn-warning">Edit</a>
-                                                    
-                                                        <a href="{{ route('storenumber.toggleStatus', $key + 1) }}"
-                                                            class="btn btn-info">
-                                                            {{ $row[6] == 'Enabled' ? 'Disable' : 'Enable' }}
-                                                        </a>
                                                     </td>
 
                                                 </tr>

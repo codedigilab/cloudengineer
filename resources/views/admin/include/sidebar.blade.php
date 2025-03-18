@@ -46,13 +46,38 @@
 
                   </li>
                   <li>
+                      <a href="{{ route('internet.index') }}" class=" waves-effect">
+                          <i class="bx bx-envelope"></i>
+                          <span key="t-email">Internet Data</span>
+                      </a>
+
+                  </li>
+                   <li>
+                      <a href="{{ route('wifipassword.index') }}" class="waves-effect">
+                          <i class="bx bx-calendar"></i>
+                          <span key="t-dashboards">Wifi Password</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="{{ route('storenumber.index') }}" class="waves-effect">
+                          <i class="bx bx-chat"></i>
+                          <span key="t-chat">Store Number</span>
+                      </a>
+                  </li>
+                  <li>
                       <a href="{{ route('prime.index') }}" class="waves-effect">
 
                           <i class="bx bx-layout"></i>
                           <span key="t-layouts">Prime Details</span>
                       </a>
                   </li>
+                  <li>
+                      <a href="{{ route('solution.index') }}" class=" waves-effect">
+                          <i class="bx bx-receipt"></i>
+                          <span key="t-invoices">Solution</span>
+                      </a>
 
+                  </li>
                   <li>
                       <a href="{{ route('biometric.index') }}" class="waves-effect">
 
@@ -63,44 +88,12 @@
                   </li>
 
                   <li>
-                      <a href="{{ route('wifipassword.index') }}" class="waves-effect">
-                          <i class="bx bx-calendar"></i>
-                          <span key="t-dashboards">Wifi Password</span>
-                      </a>
-                  </li>
-
-                  <li>
-                      <a href="{{ route('storenumber.index') }}" class="waves-effect">
-                          <i class="bx bx-chat"></i>
-                          <span key="t-chat">Store Number</span>
-                      </a>
-                  </li>
-
-                  <li>
                       <a href="{{ route('camera.index') }}" class="waves-effect">
                           <i class="bx bx-file"></i>
                           <span key="t-file-manager">NCR Camera</span>
                       </a>
                   </li>
-
-
-                  <li>
-                      <a href="{{ route('internet.index') }}" class=" waves-effect">
-                          <i class="bx bx-envelope"></i>
-                          <span key="t-email">Internet Data</span>
-                      </a>
-
-                  </li>
-
-                  <li>
-                      <a href="{{ route('solution.index') }}" class=" waves-effect">
-                          <i class="bx bx-receipt"></i>
-                          <span key="t-invoices">Solution</span>
-                      </a>
-
-                  </li>
-
-                  
+                 
 
                   <li>
                       <a href="{{ route('pos.index') }}" class="waves-effect">
